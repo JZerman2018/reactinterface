@@ -109,7 +109,6 @@ class App extends Component {
   return 1 * order;
 }
   })
-
   .filter(eachItem => {
     return (
       eachItem['petName']
