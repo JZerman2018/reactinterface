@@ -129,15 +129,17 @@ class App extends Component {
           <div className="row">
             <div className="col-md-12 bg-white">
               <div className="container">
-                <AddAppointments />
+                <AddAppointments 
                   formDisplay = {this.state.formDisplay}
                   toggleForm = {this.toggleForm}
                   addAppointment = {this.addAppointment}
-                <SearchAppointments />
+                  />
+                <SearchAppointments 
                   orderBy = {this.state.orderBy}
                   orderDir = {this.state.orderDir}
                   changeOrder = {this.changeOrder}
                   searchApts = {this.searchApts}
+                  />
                 <ListAppointments
                   appointments={filteredApts}
                   deleteAppointment={this.deleteAppointment}
